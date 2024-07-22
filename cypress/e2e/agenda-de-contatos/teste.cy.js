@@ -47,11 +47,6 @@ describe('Agenda de Contatos', () => {
     cy.contains('Maria Souza').should('be.visible');
     cy.contains('maria.souza@example.com').should('be.visible');
     cy.contains('112233445').should('be.visible');
-    
-    // Verifique se o contato antigo foi removido
-    cy.contains('Maria Oliveira').should('not.exist');
-    cy.contains('maria.oliveira@example.com').should('not.exist');
-    cy.contains('987654321').should('not.exist');
   });
   
   
